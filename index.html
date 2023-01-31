@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <title>Newton School | Tip calculator JS Project</title>
+</head>
+
+<body>
+
+  <main class="Main" id="main">
+
+    <div class="main-message-container">
+      <h1 class="main-message">Frolic<br>Design</h1>
+    </div>
+
+    <div class="calc-container">
+
+      <div class="bill-container input-content">
+
+        <div class="bill-message">
+          <h3>Bill</h3>
+          <h3 class="error-text invisible" id="error-message2">Numbers only</h3>
+        </div>
+
+        <div class="input-container">
+          <img alt="A dollar symbol" src="images/icon-dollar.svg" aria-hidden="true">
+          <input type="text" id="bill" placeholder="0" maxlength="6">
+        </div>
+
+      </div>
+
+      <div class="tip-container input-content">
+        <h3>Select tip %</h3>
+        <div class="tip-buttons">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input id="custom-input" placeholder="Custom" maxlength="3">
+        </div>
+      </div>
+
+      <div class="people-container input-content">
+        <div class="people-headers">
+          <h3>Number of People</h3>
+          <h3 class="error-text invisible" id="error-message1">Numbers only</h3>
+          <!-- <h3 class="error-text invisible" id="error-message3">Number Dal Sale.!</h3> -->
+        </div>
+        <div class="input-container">
+          <img alt="A cartoon of a person" src="images/icon-person.svg" aria-hidden="true">
+          <input type="text" id="people" placeholder="0" maxlength="4">
+        </div>
+      </div>
+
+      <div class="result-container">
+        <div class="amount-container result-content">
+          <div class="message-container">
+            <p class="result-message">Tip Amount</p>
+            <p class="per-person-message">/ person</p>
+          </div>
+          <p class="result-display" id="tip-amount">₹0.00</p>
+        </div>
+        <div class="total-container result-content">
+          <div class="message-container">
+            <p class="result-message">Total</p>
+            <p class="per-person-message">/ person</p>
+          </div>
+          <p class="result-display" id="total-amount">₹0.00</p>
+        </div>
+        <div class="button-container">
+          <button id="reset-button" alt="Reset button">RESET</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Copyright: <a href="https://github.com/FrolicBrat" target="_blank">FrolicDesigns</a>.
+    </div>
+
+
+    <script src="script.js"></script>
+  </main>
+</body>
+
+</html>
